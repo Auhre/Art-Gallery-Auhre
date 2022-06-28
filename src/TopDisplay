@@ -1,0 +1,14 @@
+function TopDisplay() {
+    return(
+    
+        <section class="w-full bg-black h-16 p-3 flex">
+            <img 
+                src="../images/arts.png"
+                alt="images of arts"
+                class="h-20"
+            />
+        </section>
+    );
+}
+
+export default TopDisplay;
