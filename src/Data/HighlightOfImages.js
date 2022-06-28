@@ -1,4 +1,4 @@
-export default {
+const HighlightOfImages = {
     "South Korea": [
         {
             url: "https://i.pinimg.com/564x/32/dd/56/32dd56fbfe6d5b78f8d45b1a2fc02519.jpg"
@@ -70,3 +70,4 @@ export default {
         }
     ]
 }
+export default HighlightOfImages;

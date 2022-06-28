@@ -1,4 +1,4 @@
-export default [
+const TopArtistsData = [
     {
         image: "https://i.pinimg.com/564x/6d/18/1a/6d181a9895ff7702476102bfca6666c0.jpg",
         name: "Vax Seven",
@@ -6,7 +6,7 @@ export default [
         id: "uid_098",
         status: "Online",
         artworks: "718",
-        followers: "36749",
+        followers: "26749",
         followings: "22" 
     },
     {
@@ -16,7 +16,7 @@ export default [
         id: "uid_348",
         status: "5 mins",
         artworks: "2563",
-        followers: "133294",
+        followers: "43294",
         followings: "894" 
     },
     {
@@ -30,3 +30,4 @@ export default [
         followings: "165" 
     }
 ]
+export default TopArtistsData;

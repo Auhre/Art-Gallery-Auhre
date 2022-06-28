@@ -1,10 +1,11 @@
-export default [
+const TopData = [
     {
         image: "https://i.pinimg.com/564x/f2/7d/cc/f27dcc779b8cd4fb7ac494beeaa821aa.jpg",
         country: "Czech Republic",
         artname: "Mystic",
         title: "Most Sales",
         artist: "Azzyx",
+        art_id: "d_x32342",
         description: "Look at the beauty in her eyes, a glow that shines like the sunrise. Her smile opens up the cloudy skies, her laughter delights butterflies. The ocean greets her as she passes by. Her gorgeous toes leave their mark, saying goodbye."
     },
     {
@@ -13,6 +14,7 @@ export default [
         artname: "Automata Grandia",
         title: "Most Rates",
         artist: "Le Spux",
+        art_id: "s_v43534",
         description: "The world is yet to know. The beauty inside you ignites the brightest flames. The energy in thou eyes is supreme, no one will ever wonder how you existed."
     },
     {
@@ -21,6 +23,8 @@ export default [
         artname: "Kingdom Come",
         title: "Most Views",
         artist: "Pife Treu",
+        art_id: "g_w46351",
         description: "All blood in hunger, peace is not found. All precious existence can vanish in the hands of human. War in general exist in the minds of the elites where as killing elites means saving civilians."
     }
 ]
+export default TopData;

@@ -9,3 +9,144 @@
   .hide-scroll-bar::-webkit-scrollbar {
     display: none;
   }
+
+.modal-focus{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.art-modal-focus{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}  
+.check-box{
+  accent-color: black;
+}
+.custom-height {
+  min-height: 16rem;
+  max-height: 33rem;
+}
+
+@media (max-width: 840px) {
+  .cards{
+    flex-direction: column;
+    width: 70%;
+    height: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .overflow-responsive{
+    overflow-y: scroll;
+  }
+  .card-height-responsive{
+    height: 16rem; 
+  }
+  .explore-follow-button{
+    width: 35%;
+    left: 6rem; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-artist-cards{
+    width: 70%;
+    height: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .to-column-responsive{
+    flex-direction: column;
+  }
+  .adjust-container {
+    height: auto;
+  }
+  .adjust-subcontainer {
+    width: 100%; 
+  }
+  .description-responsive{
+    width: 70%; 
+  }
+  .signup-button-responsive{
+    width: 70%; 
+  }
+  .art-header-responsive{
+    margin-left: 4rem;
+  }
+  .top-art-image-responsive{
+    width: 60%; 
+    height: 28rem; 
+    margin-left: 16px;
+  }
+  .top-art-title-responsive{
+    margin-left: 0px;
+  }
+  .modal-responsive{
+    width: 70%;
+  }
+  .to-column-explore-responsive{
+    flex-direction: column;
+    height: 32rem; 
+  }
+  .overflow-explore-responsive{
+    overflow-y: scroll;
+  }
+  .card-height-responsive{
+    height: 28rem; 
+  }
+  .explore-art-image-responsive{
+    width: 70%; 
+    height: 48rem; 
+    margin-left: 16px;
+  }
+  .explore-follow-button{
+    right: 9rem; 
+  }
+  .top-display-responsive{
+    width: 45%; 
+  }
+  .section-buy-responsive{
+    width: 60%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1440px) {
+  .text-col-responsive{
+    width: 66.666667%; 
+  }
+  .top-artist-label-responsive {
+    width: 80%;
+  }
+  .home-button-responsive {
+    margin-top: 70px;
+  }
+  .top-art-image-responsive{
+    height: 32rem; 
+    margin-left: 16px;
+  }
+  .profile-follow-button-responsive{
+    width: 35%;
+  }
+}
+
+rating-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #ffd700;
+}
+.off {
+  color: #ccc;
+}

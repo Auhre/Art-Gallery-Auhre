@@ -5,6 +5,7 @@ import TopArtSection from "./TopArtSection";
 import TopArtistSection from './TopArtistSection';
 import {Outlet} from "react-router-dom";
 
+
 function Home() {
   return (
     <>

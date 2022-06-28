@@ -1,14 +1,15 @@
 import TopArt from './TopArt'
-import topData from '../Data/TopData'
+import TopData from '../Data/TopData'
 
 function TopArtSection() {
-    const topArtData = topData.map(data => {
+    const topArtData = TopData.map(data => {
         return <TopArt 
-        data={data}/>
+                    key={data.art_id}
+                    data={data}/>
     })
     return (
-        <div class="mt-16">
-            <h3 class="font-bold mx-24 mt-4 text-2xl mb-6">Top Arts</h3>
+        <div className="mt-16">
+            <h3 className="font-bold mx-24 mt-4 text-2xl mb-6 art-header-responsive">Top Arts</h3>
             {topArtData}
         </div>
     );

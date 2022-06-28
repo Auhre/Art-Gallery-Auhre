@@ -4,19 +4,19 @@ function MyProfileHeader({prop}) {
     
     const [openModalFollowings, setOpenModalFollowings] = React.useState(false)
     const [openModalFollowers, setOpenModalFollowers] = React.useState(false)
+    localStorage.setItem("profilePicture", prop.image)
+    // functions to open modals
     function viewModalFollowings() {
         setOpenModalFollowings(true)
     }
-
     function viewModalFollowers() {
         setOpenModalFollowers(true)
     }
 
-
     return (
-        <div className="relative mt-10 p-10 bg-gray-800 rounded-md w-10/12 mx-auto">
+        <div className="mt-10 p-10 bg-black rounded-md w-10/12 mx-auto">
             <div className="w-10/12 h-32 bg-white mx-auto p-8 rounded-md mb-16">
-                <img src={prop.image} className="mx-auto object-cover rounded-full w-40 h-40" alt="artist display"/>
+                <img src={localStorage.getItem("profilePicture")} className="mx-auto object-cover rounded-full w-40 h-40" alt="artist display"/>
             </div>
             <h3 className="text-center text-2xl tracking-tighter text-white">{prop.username}</h3>
             <h3 className="text-center text-md tracking-tighter text-gray-200"><i>{prop.country}</i></h3>

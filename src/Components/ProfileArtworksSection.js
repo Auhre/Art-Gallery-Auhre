@@ -6,14 +6,17 @@ function ProfileArtworksSection() {
     const location = useLocation();
     const { id, artworks } = location.state;
     const arts = ProfileArtworksData[id].map(data => {
-        return <ProfileArtworks data={data}/>
+        return <ProfileArtworks 
+                    key={data.art_id} 
+                    data={data}
+                />
     })
     return(
         <>
-        <h2 class="mt-6 mx-36 font-bold text-xl"><i class="text-2xl mr-1">{artworks}</i> Artworks </h2>
-        <div class="mt-2 mx-auto w-10/12 h-auto flex overflow-x-scroll hide-scroll-bar">
-            {arts}
-        </div>
+            <h2 className="mt-6 mx-36 font-bold text-xl text-center"><i className="text-2xl mr-1">{artworks}</i> Artworks </h2>
+            <div className="mt-6 mx-auto w-10/12 h-auto flex overflow-x-scroll hide-scroll-bar cards overflow-responsive">
+                {arts}
+            </div>
         </>
     );
 }
