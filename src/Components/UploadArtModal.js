@@ -34,9 +34,6 @@ function UploadArtModal({prop, length}) {
         
       }, [value]);
 
-
-
-
     function closeModal(){
         prop(false)
     }
