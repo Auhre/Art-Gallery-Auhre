@@ -26,7 +26,6 @@ function YourArtworks() {
         const userId = localStorage.getItem("profileId")
             if (arts.userId === userId) {
                 boundArt.push(arts)
-                localStorage.setItem(arts.title, arts.image)
                 return <MyArtworks 
                 key={arts.id}
                 data={arts}/>
